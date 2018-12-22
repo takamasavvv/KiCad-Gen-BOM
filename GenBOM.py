@@ -26,11 +26,19 @@ def extract_parts(xml_dir):
         part['ref'] = comp.attrib['ref']
         for field in comp.iter('field'):
             if field.text in '-':  # if field doesnt has data
-                part[field.attrib['name']] = None
+                part[field.attrib['Name']] = None
             else:
-                part[field.attrib['name']] = field.text
+                part[field.attrib['Name']] = field.text
         parts_list.append(part)
     return parts_list
+
+
+def check_part_err(part, key_name):
+    """chec part field"""
+    try:
+        return part[key_name]
+    except KeyError:  #undefined field name
+        print("err : wrong field\n{0}".format(part))
 
 
 def gen_unite_list(parts_list, project):
@@ -40,9 +48,9 @@ def gen_unite_list(parts_list, project):
     unite_list = []
     for part in parts_list:
         comp_part = \
-            {v[0]: part[v[1]] for v in mapping.items() if v[1] is not None}
+            {v[0]: check_part_err(part, v[1]) for v in mapping.items() if v[1] is not None}
         # - extract compare factor
-        if comp_part not in comp_list:  # if comp_part isnt exist in comp_list
+        if comp_part not in comp_list:  # - if comp_part isnt exist in comp_list
             unite_list.append([comp_part, [part['ref']], 1])
             comp_list.append(comp_part)
         else:
