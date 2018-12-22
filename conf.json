@@ -1,0 +1,47 @@
+[{
+    "project":{
+        "name":"test",
+        "dir":"./",
+        "bom":"PCBgogo",
+        "field":{
+            "ref":"",
+            "MPN":"",
+            "Agency":"",
+            "Name":"",
+            "Value":"",
+            "Package":"", 
+            "Manufacturer":"",
+            "Description":""
+        }
+    },
+    "BOM":{
+        "PCBgogo":{
+            "format":{
+                "Designator":[],
+                "Quantity":0
+            },
+            "column":[
+                "Designator",
+                "Manufacturer Part Number",
+                "Quantity",
+                "Agency",
+                "Description",
+                "Name",
+                "Package",
+                "Manufacturer",
+                "Value"
+            ],
+            "mapping":{
+                "Designator":null,
+                "Manufacturer Part Number":"MPN",
+                "Quantity":null,
+                "Agency":"Agency",
+                "Description":"Description",
+                "Name":"Name",
+                "Package":"Package",
+                "Manufacturer":"Manufacturer",
+                "Value":"Value"
+            }
+        }
+    }
+}]

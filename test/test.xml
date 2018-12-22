@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/takamasavvv/Dropbox/Workspace/KiCad-Projects/STR-X-ConnectBoard/STR-X-ConnectBoard.sch</source>
+    <date>2018/12/19 18:41:53</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>STR-X-ConnectBoard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C3">
+      <value>CONN_02X16</value>
+      <footprint>KUT-Footprints:FX2-32S-1.27DSL(71)</footprint>
+      <fields>
+        <field name="MPN">FX2-32P-1.27DSL(71)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">32pos 1.27mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">Hirose Electric Co Ltd</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_02X16"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59D91C87</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>SM_0</value>
+      <footprint>Connectors_JST:JST_PH_S3B-PH-SM4-TB_03x2.00mm_Angled</footprint>
+      <fields>
+        <field name="MPN">S3B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">3pos 2mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X03_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD8BCA</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>SM_R</value>
+      <footprint>Connectors_JST:JST_PH_S3B-PH-SM4-TB_03x2.00mm_Angled</footprint>
+      <fields>
+        <field name="MPN">S3B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">3pos 2mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X03_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD8BD7</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>SM_L</value>
+      <footprint>Connectors_JST:JST_PH_S3B-PH-SM4-TB_03x2.00mm_Angled</footprint>
+      <fields>
+        <field name="MPN">S3B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">3pos 2mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X03_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD8DF0</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>SM_1</value>
+      <footprint>Connectors_JST:JST_PH_S3B-PH-SM4-TB_03x2.00mm_Angled</footprint>
+      <fields>
+        <field name="MPN">S3B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">3pos 2mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X03_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD8DFD</tstamp>
+    </comp>
+    <comp ref="B8">
+      <value>CONN_02X03</value>
+      <footprint>Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight</footprint>
+      <fields>
+        <field name="MPN">1053101206</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">-</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">Molex, LLC</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_02X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A67230B</tstamp>
+    </comp>
+    <comp ref="T11">
+      <value>CAN</value>
+      <footprint>Connectors_JST:JST_PH_B4B-PH-SM4-TB_04x2.00mm_Straight</footprint>
+      <fields>
+        <field name="MPN">B4B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">4pos 2mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X04_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C1C248E</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>UART0</value>
+      <footprint>Connectors_JST:JST_SH_SM04B-SRSS-TB_04x1.00mm_Angled</footprint>
+      <fields>
+        <field name="MPN">SM04B-SRSS-TB(LF)(SN)</field>
+        <field name="Agency">Digikey</field>
+        <field name="Name">Connector header</field>
+        <field name="Value">-</field>
+        <field name="Package">4pos 1mm</field>
+        <field name="Description">-</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+      </fields>
+      <libsource lib="STR-X-ConnectBoard-cache" part="CONN_01X04_FEMALE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59D920E3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="STR-X-ConnectBoard-cache" part="CONN_01X03_FEMALE">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X03_FEMALE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="STR-X-ConnectBoard-cache" part="CONN_01X04_FEMALE">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04_FEMALE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="STR-X-ConnectBoard-cache" part="CONN_02X03">
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+        <fp>IDC_Header_Straight_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="STR-X-ConnectBoard-cache" part="CONN_02X16">
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X16</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="STR-X-ConnectBoard-cache">
+      <uri>C:\Users\takamasavvv\Dropbox\Workspace\KiCad-Projects\STR-X-ConnectBoard\STR-X-ConnectBoard-cache.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J9" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J8" pin="5"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J11" pin="1"/>
+      <node ref="J3" pin="17"/>
+      <node ref="J3" pin="18"/>
+      <node ref="J3" pin="19"/>
+      <node ref="J3" pin="20"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J10" pin="1"/>
+    </net>
+    <net code="2" name="+BATT">
+      <node ref="J3" pin="29"/>
+      <node ref="J3" pin="31"/>
+      <node ref="J11" pin="2"/>
+      <node ref="J3" pin="32"/>
+      <node ref="J3" pin="30"/>
+      <node ref="J8" pin="1"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J8-Pad3)">
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="4" name="Net-(J8-Pad6)">
+      <node ref="J8" pin="6"/>
+    </net>
+    <net code="5" name="Net-(J3-Pad21)">
+      <node ref="J3" pin="21"/>
+    </net>
+    <net code="6" name="Net-(J3-Pad23)">
+      <node ref="J3" pin="23"/>
+    </net>
+    <net code="7" name="Net-(J3-Pad22)">
+      <node ref="J3" pin="22"/>
+    </net>
+    <net code="8" name="Net-(J3-Pad24)">
+      <node ref="J3" pin="24"/>
+    </net>
+    <net code="9" name="/SMOUT_0">
+      <node ref="J3" pin="9"/>
+      <node ref="J6" pin="3"/>
+    </net>
+    <net code="10" name="VCC">
+      <node ref="J3" pin="27"/>
+      <node ref="J3" pin="28"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="11" name="+5V">
+      <node ref="J10" pin="2"/>
+      <node ref="J3" pin="15"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J3" pin="16"/>
+    </net>
+    <net code="12" name="/SMOUT_1">
+      <node ref="J3" pin="10"/>
+      <node ref="J7" pin="3"/>
+    </net>
+    <net code="13" name="/SMOUT_2">
+      <node ref="J9" pin="3"/>
+      <node ref="J3" pin="11"/>
+    </net>
+    <net code="14" name="/SMOUT_3">
+      <node ref="J3" pin="12"/>
+      <node ref="J10" pin="3"/>
+    </net>
+    <net code="15" name="VDD">
+      <node ref="J7" pin="2"/>
+      <node ref="J3" pin="26"/>
+      <node ref="J3" pin="25"/>
+    </net>
+    <net code="16" name="/GPIO">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="17" name="/CANH">
+      <node ref="J3" pin="7"/>
+      <node ref="J11" pin="3"/>
+    </net>
+    <net code="18" name="/CANL">
+      <node ref="J3" pin="8"/>
+      <node ref="J11" pin="4"/>
+    </net>
+    <net code="19" name="/UART_0_RX">
+      <node ref="J3" pin="4"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="20" name="/UART_1_RX">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="21" name="VDC">
+      <node ref="J3" pin="14"/>
+      <node ref="J3" pin="13"/>
+    </net>
+    <net code="22" name="/FLED">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="23" name="/UART_0_TX">
+      <node ref="J1" pin="3"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="24" name="/UART_1_TX">
+      <node ref="J3" pin="5"/>
+    </net>
+  </nets>
+</export>
