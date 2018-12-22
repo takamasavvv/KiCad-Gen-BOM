@@ -38,7 +38,9 @@ def check_part_err(part, key_name):
     try:
         return part[key_name]
     except KeyError:  #undefined field name
-        print("err : wrong field\n{0}".format(part))
+        print("Error\t:wrong field\nCHECK!!!\n")
+        for field in part.items():
+            print(f"{field[0]:12}\t{field[1]}")
 
 
 def gen_unite_list(parts_list, project):
