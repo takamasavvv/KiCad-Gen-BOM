@@ -1,13 +1,8 @@
 import xml.etree.ElementTree as ET
 import re
-import sys
 import csv
 import json
-import collections
-import copy
-import pprint
 
-pp = pprint.PrettyPrinter(indent=4)
 component = ".//comp"
 desig_ptn = re.compile(r'[a-zA-Z][a-zA-Z]?')
 
@@ -19,15 +14,6 @@ def define_config():
         config['project']['bom'] = \
             config['BOM'][config['project']['bom']]
         return config['project']
-
-
-def modify_line(unite_line):
-    """"""
-    sorted(unite_line[1], key=lambda x: int(desig_ptn.split(x)[1]))
-    unite_line[0]['Designator'] = ','.join(unite_line[1])
-    unite_line[0]['Quantity'] = unite_line[2]
-    mod_line = unite_line[0]
-    return [desig_ptn.match(unite_line[1][0]).group(), mod_line]
 
 
 def extract_parts(xml_dir):
@@ -53,7 +39,8 @@ def gen_unite_list(parts_list, project):
     comp_list = []
     unite_list = []
     for part in parts_list:
-        comp_part = {v[0]: part[v[1]] for v in mapping.items() if v[1] is not None}
+        comp_part = \
+            {v[0]: part[v[1]] for v in mapping.items() if v[1] is not None}
         if comp_part not in comp_list:
             unite_list.append([comp_part, [part['ref']], 1])
             comp_list.append(comp_part)
@@ -64,26 +51,34 @@ def gen_unite_list(parts_list, project):
     return unite_list
 
 
+def modify_line(unite_line):
+    """ """
+    sorted(unite_line[1], key=lambda x: int(desig_ptn.split(x)[1]))
+    unite_line[0]['Designator'] = ','.join(unite_line[1])
+    unite_line[0]['Quantity'] = unite_line[2]
+    mod_line = unite_line[0]
+    return [desig_ptn.match(unite_line[1][0]).group(), mod_line]
+
+
 def gen_bom_list(mod_list):
     mod_list.sort(key=lambda desig: desig[0])
     return [bom_line[1] for bom_line in mod_list]
 
+
 def main():
-    """  """
-    
+    """  """    
     project = define_config()
-    xml_dir = project['dir'] + project['name'] + "/" + project['name'] + ".xml"
-    rows = extract_parts(xml_dir)
+    prj_dir = project['dir'] + project['name'] + "/"
+    rows = extract_parts(prj_dir + project['name'] + ".xml")
     mod_list = [modify_line(i) for i in gen_unite_list(rows, project)]
 
-    with open(project['name']+".csv", 'w', newline='\n') as ds:
+
+    with open(prj_dir + project['name'] + "-BOM" + ".csv", 'w', newline='\n') as ds:
         writer = csv.DictWriter(ds, project['bom']['column'])
         writer.writeheader()
         for row in gen_bom_list(mod_list):
             writer.writerow(row)
-            
+
 
 if __name__ == '__main__':
-    main()
-
-    
+    main() 
